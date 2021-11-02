@@ -76,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), Page_Male_Activity.class);
                     startActivity(intent);
                 } else if (female.isChecked()) {
-                    Toast.makeText(getApplicationContext(), "아직 페이지가 만들어지지 않았습니다",
-                            Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getApplicationContext(), Page_Female_Activity.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(), "성별을 선택하세요",
                             Toast.LENGTH_SHORT).show();

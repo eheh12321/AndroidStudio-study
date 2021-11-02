@@ -9,52 +9,59 @@
     <!-- 위젯에 id 부여: @+id/[아이디] -->
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/btn_confirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/female"
-        app:layout_constraintVertical_bias="0.527" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintVertical_bias="0.951" />
 
-    <RadioButton
-        android:id="@+id/female"
+    <RadioGroup
+        android:id="@+id/radioGroup2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:linksClickable="false"
-        android:text="여성"
-        android:textColor="#CC1212"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.623"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-    <RadioButton
-        android:id="@+id/male"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="남성"
-        android:textColor="#0A3AB1"
-        android:textStyle="bold"
-        android:typeface="sans"
-        app:layout_constraintBottom_toBottomOf="@+id/female"
-        app:layout_constraintEnd_toStartOf="@+id/female"
-        app:layout_constraintHorizontal_bias="0.834"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/female"
-        app:layout_constraintVertical_bias="0.0"
-        app:useMaterialThemeColors="false" />
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:text="남성"
+            android:textColor="#0A3AB1"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:useMaterialThemeColors="false" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:linksClickable="false"
+            android:text="여성"
+            android:textColor="#CC1212" />
+
+    </RadioGroup>
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="265dp"
         android:layout_height="98dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="30dp"
         android:background="#D35B85"
         android:orientation="vertical"
         android:paddingLeft="5dp"
@@ -90,7 +97,7 @@
         android:id="@+id/linearLayout3"
         android:layout_width="262dp"
         android:layout_height="92dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="30dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="@+id/tableLayout2"
         app:layout_constraintStart_toStartOf="@+id/tableLayout2"

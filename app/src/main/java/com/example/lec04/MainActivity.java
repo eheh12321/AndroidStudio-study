@@ -11,11 +11,14 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.MultiAutoCompleteTextView;
+import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button calcButton, imgButton, layoutButton, clockButton;
+    Button calcButton, imgButton, layoutButton, clockButton, confirmButton;
+    RadioButton male, female;
     TextView tv1, tv2, tv3;
 
     @Override
@@ -28,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
         imgButton = (Button) findViewById(R.id.btn_img);
         layoutButton = (Button) findViewById(R.id.btn_layout);
         clockButton = (Button) findViewById(R.id.btn_clock);
+        confirmButton = (Button) findViewById(R.id.btn_confirm);
+
+        male = (RadioButton) findViewById(R.id.male);
+        female = (RadioButton) findViewById(R.id.female);
 
         clockButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +65,23 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), LayoutActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        confirmButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(male.isChecked()) {
+                    Intent intent = new Intent(getApplicationContext(), Page_Male_Activity.class);
+                    startActivity(intent);
+                } else if (female.isChecked()) {
+                    Toast.makeText(getApplicationContext(), "아직 페이지가 만들어지지 않았습니다",
+                            Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "성별을 선택하세요",
+                            Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

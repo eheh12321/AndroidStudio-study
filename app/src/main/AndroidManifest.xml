@@ -22,6 +22,7 @@
         <activity android:name=".LayoutActivity"/>
         <activity android:name=".TCalculatorActivity"/>
         <activity android:name=".ClockActivity"/>
+        <activity android:name=".Page_Male_Activity"/>
     </application>
 
 </manifest>

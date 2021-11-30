@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -8,40 +9,89 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="179dp">
+        android:weightSum="10">
 
-        <Button
-            android:id="@+id/week10_btn1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="scale" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="#ECB5B5"
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/week10_btn2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="translate" />
+            <Button
+                android:id="@+id/week10_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="scale"
+                app:backgroundTint="#392D2D" />
 
-        <Button
-            android:id="@+id/week10_btn3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="rotate" />
+            <Button
+                android:id="@+id/week10_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="translate"
+                app:backgroundTint="#392D2D" />
 
-        <Button
-            android:id="@+id/week10_btn4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="transparent" />
+            <Button
+                android:id="@+id/week10_btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rotate"
+                app:backgroundTint="#392D2D" />
 
-        <Button
-            android:id="@+id/week10_btn5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="scale2" />
+            <Button
+                android:id="@+id/week10_btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="transparent"
+                app:backgroundTint="#392D2D" />
 
+            <Button
+                android:id="@+id/week10_btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="scale2"
+                app:backgroundTint="#392D2D" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="#7FC4E4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/week10_webbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#502B2B"
+                    android:text="열기"
+                    app:backgroundTint="#974C4C" />
+
+                <EditText
+                    android:id="@+id/week10_edtUrl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="URL"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/week10_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

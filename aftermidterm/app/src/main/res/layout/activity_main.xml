@@ -31,5 +31,11 @@
             android:layout_height="wrap_content"
             android:text="10주차 - 애니메이션" />
 
+        <Button
+            android:id="@+id/btn_week10_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10주차 - 시크바, 키패드" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

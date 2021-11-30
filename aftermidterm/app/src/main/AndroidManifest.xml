@@ -23,6 +23,7 @@
         <activity android:name=".week9.Week9_2_Activity"></activity>
         <activity android:name=".week10.Week10_Activity"></activity>
         <activity android:name=".week10.Week10_2_Activity"></activity>
+        <activity android:name=".week11.Week11_Activity"></activity>
     </application>
 
 </manifest>

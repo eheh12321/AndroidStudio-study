@@ -43,5 +43,11 @@
             android:layout_height="wrap_content"
             android:text="11주차 - 이미지" />
 
+        <Button
+            android:id="@+id/btn_week11_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11주차 - 포토샵" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
